@@ -38,6 +38,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         int pos = StdRandom.uniform(n);
         Item temp = q[pos];
         q[pos] = q[--n];
+        q[n] = null;
         return temp;
     }
 
