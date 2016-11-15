@@ -56,9 +56,9 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         private int i = n;
         
         public ListIterator() {
-            shuffled = (Item[]) new Object[n];
+            shuffled = (Item[]) new Object[i];
             for (int j = 0; j < i; j++)
-                shuffled[i] = q[i];
+                shuffled[j] = q[j];
             StdRandom.shuffle(shuffled);
         }
             
